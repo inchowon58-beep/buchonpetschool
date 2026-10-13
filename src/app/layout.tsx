@@ -103,7 +103,7 @@ export default function RootLayout({
         <Header />
         {children}
         <FixedCta />
-        <AdPopup />
+        {SITE.showPopup ? <AdPopup /> : null}
       </body>
     </html>
   );
